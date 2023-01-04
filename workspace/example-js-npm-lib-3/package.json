@@ -1,0 +1,43 @@
+{
+  "name": "example-js-npm-lib-3",
+  "version": "1.0.0",
+  "description": "",
+  "main": "dist/example-js-npm-lib-3.cjs.js",
+  "module": "dist/example-js-npm-lib-3.esm.js",
+  "browser": "dist/example-js-npm-lib-3.umd.js",
+  "scripts": {
+    "test": "npx c8 mocha --reporter spec test --recursive",
+    "verify": "npx c8 check-coverage --lines 80",
+    "build": "rollup -c",
+    "check": "npx eslint --fix src --format html -o build/eslint.html",
+    "format": "npx prettier-eslint \"src/**/*.js\" --write -l info"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/jvalentino/example-js-npm-lib-3.git"
+  },
+  "author": "john valentino",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/jvalentino/example-js-npm-lib-3/issues"
+  },
+  "homepage": "https://github.com/jvalentino/example-js-npm-lib-3#readme",
+  "devDependencies": {
+    "@babel/core": "7.20.7",
+    "@babel/preset-env": "7.20.2",
+    "@rollup/plugin-babel": "6.0.3",
+    "@rollup/plugin-commonjs": "24.0.0",
+    "@rollup/plugin-node-resolve": "15.0.1",
+    "c8": "7.12.0",
+    "chai": "4.3.7",
+    "eslint": "8.31.0",
+    "mocha": "10.2.0",
+    "prettier-eslint-cli": "7.1.0",
+    "rollup": "2.79.1",
+    "sinon": "15.0.1"
+  },
+  "files": [
+    "dist",
+    "src"
+  ]
+}

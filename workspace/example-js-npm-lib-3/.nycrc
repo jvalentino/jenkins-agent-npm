@@ -1,0 +1,11 @@
+{
+    "all": true,
+    "exclude": ["test", "coverage", "build", "manual-testing", "rollup.config.js", "dist"],
+    "output": "reports",
+    "reporter" : [
+        "html",
+        "text",
+        "json",
+        "cobertura"
+    ]
+}

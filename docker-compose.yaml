@@ -1,0 +1,12 @@
+version: '3.8'
+services:
+  jenkins_agent_npm:
+    image: jvalentino2/jenkins-agent-npm
+    privileged: true
+    user: root
+    build: 
+      context: .
+      dockerfile: Dockerfile
+    container_name: jenkins_agent_npm
+    volumes:
+     - ./workspace:/home/jenkins/workspace
